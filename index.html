@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Watch Serie 5</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css">
+</head>
+
+<body>
+
+    <header class="header" id="header">
+        <div class="container items">
+            <div class="item">
+                <a href="#" class="logo-link">
+                    <img src="apple.svg" alt="" srcset="">
+                </a>
+                <nav class="navigation">
+                    <a href="#" class="link">Mac</a>
+                    <a href="#" class="link">iPad</a>
+                    <a href="#" class="link">iPhone</a>
+                    <a href="#" class="link">Watch</a>
+                    <a href="#" class="link">TV</a>
+                </nav>
+            </div>
+            <div class="controls">
+                <div class="control"><i class='bx bx-user'></i></div>
+                <span>|</span>
+                <div class="control"><i class='bx bx-shopping-bag'></i></div>
+                <div class="switch">
+                    <span id="sun" class="active"><i class='bx bx-sun'></i></span>
+                    <span id="moon"><i class='bx bx-moon'></i></span>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <section class="section home " id="home">
+        <div class="media">
+            <a href="#" class="icon"><i class='bx bxl-facebook' ></i></a>
+            <a href="#" class="icon"><i class='bx bxl-instagram' ></i></a>
+            <a href="#" class="icon"><i class='bx bxl-youtube' ></i></a>
+            <a href="#" class="icon"><i class='bx bxl-tiktok' ></i></a>
+
+        </div>
+        <div class="container">
+            <div class="items">
+                <div class="item">
+                    <h1 class="title">
+                        Perfect Watch For You With Most Advanced Tools
+                    </h1>
+                    <h4 class="subtitle">Apple Watch Serie 5</h4>
+                    <div class="buttons">
+                        <button class="btn-buy">Buy Now</button>
+                    </div>
+                </div>
+                <div class="item">
+
+                    <div class="image">
+                        <img src="watch.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const sun =document.getElementById('sun')
+        const moon =document.getElementById('moon')
+        const home =document.getElementById('home')
+        const header =document.getElementById('header')
+
+        sun.addEventListener('click',()=>{
+            home.classList.remove('active')
+            header.classList.remove('active')
+            moon.classList.remove('active')
+            sun.classList.add('active')
+        })
+        moon.addEventListener('click',()=>{
+            home.classList.add('active')
+            header.classList.add('active')
+            moon.classList.add('active')
+            sun.classList.remove('active')
+
+        })
+    </script>
+
+</body>
+
+</html>
